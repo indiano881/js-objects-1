@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects - Exercises</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="./js/exercises.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Objects - Exercises</h1>
+    <p class="subtitle">Write your code in <code>js/exercises.js</code> and open the console to see the results.</p>
+  </header>
+
+  <main>
+    <h2>Part 1: one object (<code>favouriteMovie</code>)</h2>
+
+    <div>
+      <p>Exercise 1: Console log the title and the year of <code>favouriteMovie</code> like this: "Back to the Future - 1985".</p>
+    </div>
+
+    <div>
+      <p>Exercise 2: Console log the name of the director, the second genre, and the role of the first actor in the cast.</p>
+    </div>
+
+    <div>
+      <p>Exercise 3: Console log the whole object. Then change the rating to 9, add a property <code>runtime</code> with the value 116, and delete the <code>watched</code> property. Console log the object again and compare.</p>
+    </div>
+
+    <div>
+      <p>Exercise 4: Create a variable <code>key</code> with the value <code>"rating"</code>. Use it to console log the rating of <code>favouriteMovie</code>. Then change <code>key</code> to <code>"year"</code> and log again. Why doesn't <code>favouriteMovie.key</code> work?</p>
+    </div>
+
+    <div>
+      <p>Exercise 5: Use a <code>for...in</code> loop to console log every property of <code>favouriteMovie</code> like this: "title: Back to the Future". What happens with <code>director</code>? Why?</p>
+      <p>Extra: console log how many properties the object has, using <code>Object.keys()</code>.</p>
+    </div>
+
+    <div>
+      <p>Exercise 6 (<code>this</code>): Add a method <code>describe</code> to <code>favouriteMovie</code> that returns "Back to the Future (1985), directed by Robert Zemeckis, rated 9". Use <code>this</code>, don't type the values!</p>
+      <p>Then add a method <code>rate(newRating)</code> that changes the rating of the object and console logs the new description.</p>
+      <p>Extra: write <code>describe</code> again as an arrow function. What happens? Write a comment explaining why.</p>
+    </div>
+
+    <h2>Part 2: array of objects (<code>movies</code>)</h2>
+
+    <div>
+      <p>Exercise 7: Console log the title of every movie (use <code>forEach</code>).</p>
+    </div>
+
+    <div>
+      <p>Exercise 8: Console log title and year of only the movies released before 2000.</p>
+    </div>
+
+    <div>
+      <p>Exercise 9: Count how many movies you haven't watched yet, and push their titles into a new array called <code>toWatch</code>. Console log both.</p>
+    </div>
+
+    <div>
+      <p>Exercise 10: Calculate the average rating of all movies (round it to 2 decimals with <code>toFixed(2)</code>). Then find the movie with the highest rating using a loop and console log its title and rating.</p>
+    </div>
+
+    <div>
+      <p>Exercise 11: Console log the title of every movie that has "Sci-Fi" in its genres. (Hint: <code>array.includes()</code>)</p>
+    </div>
+
+    <div>
+      <p>Exercise 12: Console log EVERY actor of EVERY movie like this: "Keanu Reeves plays Neo in The Matrix". (Hint: a loop inside a loop)</p>
+      <p>Extra: console log all the movies directed by Christopher Nolan.</p>
+    </div>
+
+    <div>
+      <p>Exercise 13:</p>
+      <ol>
+        <li>Push a new movie object of your choice into <code>movies</code> (with ALL the same properties, id 9).</li>
+        <li>Write a function <code>markAsWatched(id)</code> that loops over the movies and sets <code>watched</code> to <code>true</code> for the movie with that id. Test it with id 2.</li>
+        <li>Make a copy of the first movie with the spread operator and change the copy's title. Console log both to show the original did not change.</li>
+      </ol>
+    </div>
+
+    <h2>Part 3: DOM</h2>
+
+    <div id="exercise14">
+      <p>Exercise 14: Add a paragraph to this div for each movie, like "Inception (2010) - 8.8". Watched movies should end with " ✔".</p>
+    </div>
+
+    <div>
+      <p>Exercise 15: Create one button for every movie (with the movie title as text) inside <code>#exercise15-buttons</code>. When a button is clicked, show the director and the cast of that movie inside <code>#exercise15-details</code> (replace the old details on each click).</p>
+      <div id="exercise15-buttons"></div>
+      <div id="exercise15-details"></div>
+    </div>
+
+    <h2>Bonus</h2>
+
+    <div>
+      <p>Bonus: Create an object that counts how many movies come from each director's country, like <code>{ UK: 2, Japan: 1, ... }</code>. Console log it. (Hint: bracket notation with a variable key, and check if the key already exists.)</p>
+    </div>
+  </main>
+</body>
+
+</html>

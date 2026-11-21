@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  background: #f4f4f7;
+  color: #1f1f29;
+}
+
+header {
+  background: #1f1f29;
+  color: #fff;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  opacity: 0.8;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h2 {
+  margin-top: 32px;
+  border-bottom: 2px solid #e0b02c;
+  padding-bottom: 4px;
+}
+
+main > div {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+code {
+  background: #ececf1;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+a {
+  color: #b5830a;
+}
+
+button {
+  margin: 4px 6px 4px 0;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #1f1f29;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e0b02c;
+  color: #1f1f29;
+}
+
+#exercise15-details {
+  margin-top: 8px;
+}
