@@ -1,25 +1,197 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Objects - Lesson</title>
+  <title>JavaScript Objects - Exercises</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <script defer src="./js/lesson.js"></script>
+  <script src="./js/exercises.js" defer></script>
 </head>
 
 <body>
   <header>
-    <h1>JavaScript Objects</h1>
-    <p class="subtitle">Open the console (F12 / Cmd + Option + J) - everything happens there today.</p>
+    <h1>JavaScript Objects - Exercises</h1>
+    <p>
+      Write your code in <code>js/exercises.js</code>.
+      Open the browser console to see your results.
+    </p>
   </header>
 
   <main>
+
+    <h2>Part 1: Object Basics</h2>
+
     <div>
-      <p>Today: creating objects, reading and changing them, nested data, arrays of objects, looping over objects, methods and <code>this</code>, reference vs copy.</p>
-      <p>When we're done: <a href="./exercises.html">go to the exercises</a>.</p>
+      <p>
+        Exercise 1: Create an object called
+        <code>favouriteMovie</code> with the following properties:
+        title, year, rating, and watched.
+        Choose your own values.
+      </p>
     </div>
+
+    <div>
+      <p>
+        Exercise 2: Console log the title and year of your movie
+        using dot notation.
+        Then console log the rating using bracket notation.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 3: Change the rating to 9.
+        Add a new property called <code>runtime</code>.
+        Delete the <code>watched</code> property.
+        Console log the updated object.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 4: Create a variable called <code>key</code>
+        containing the string "title".
+        Use bracket notation to access the movie title.
+        Change the variable to "year" and try again.
+      </p>
+      <p>
+        Question: Why doesn't <code>favouriteMovie.key</code>
+        work?
+      </p>
+    </div>
+
+    <h2>Part 2: Nested Objects and Arrays</h2>
+
+    <div>
+      <p>
+        Exercise 5: Add a <code>director</code> property
+        containing an object with a name and country.
+        Console log the director's name.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 6: Add a <code>genres</code> property
+        containing an array of three genres.
+        Console log the second genre.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 7: Add a <code>cast</code> property
+        containing an array of two actor objects.
+        Each actor should have a name and role.
+        Console log the role of the first actor.
+      </p>
+    </div>
+
+    <h2>Part 3: Looping Through Objects</h2>
+
+    <div>
+      <p>
+        Exercise 8: Use a <code>for...in</code> loop
+        to console log every property name and its value
+        from <code>favouriteMovie</code>.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 9: Use <code>Object.keys()</code>
+        to console log all property names.
+        Then console log the total number of properties.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 10: Use <code>Object.values()</code>
+        to get all values from your movie object.
+        Loop through the returned array and console log
+        each value.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 11: Use <code>Object.entries()</code>
+        to console log each key and value.
+      </p>
+    </div>
+
+    <h2>Part 4: Value vs Reference</h2>
+
+    <div>
+      <p>
+        Exercise 12: Create two different objects
+        containing exactly the same properties and values.
+        Compare them using <code>===</code>.
+        What is the result? Why?
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 13: Create a new variable and assign
+        <code>favouriteMovie</code> to it.
+        Change the title using the new variable.
+        Console log both variables.
+        What happened?
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 14: Create two variables containing
+        the same number.
+        Change one of them.
+        Compare this behaviour with Exercise 13.
+      </p>
+    </div>
+
+    <h2>Part 5: Bonus - Arrays and DOM</h2>
+
+    <div>
+      <p>
+        Exercise 15: Create an array called
+        <code>movies</code> containing three movie objects.
+        Use <code>forEach()</code> to console log
+        the title of every movie.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 16: Use <code>filter()</code> to create
+        a new array containing only movies released
+        before the year 2000.
+        Console log the result.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Exercise 17: Create a paragraph for each movie
+        and append it to the div below.
+        Display the title and year of each movie.
+      </p>
+      <div id="movie-list"></div>
+    </div>
+
+    <div>
+      <p>
+        Exercise 18: Create a button for each movie.
+        When a button is clicked, display that movie's
+        title and rating in the div below.
+      </p>
+      <div id="movie-buttons"></div>
+      <div id="movie-details"></div>
+    </div>
+
   </main>
 </body>
 

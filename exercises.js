@@ -135,7 +135,9 @@ const movies = [
 // ---------- PART 1: ONE OBJECT (use favouriteMovie) ----------
 
 // Ex 1
-
+favouriteMovie.wakaka= "yop"
+delete favouriteMovie.genres
+console.log(favouriteMovie)
 // Ex 2
 
 // Ex 3
