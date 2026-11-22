@@ -53,6 +53,11 @@ code {
   font-size: 0.9em;
 }
 
+header code {
+  background: rgba(255, 255, 255, 0.15);
+  color: #e0b02c;
+}
+
 a {
   color: #b5830a;
 }
